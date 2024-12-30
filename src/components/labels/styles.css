@@ -1,0 +1,45 @@
+.range-labels {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.range-labels span {
+    cursor: pointer;
+}
+
+.label-wrapper {
+    position: absolute;
+    top: -30px;
+}
+
+.range-labels input {
+    position: absolute;
+    top: -10px;
+    width: auto;
+    max-width: 60px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.range-labels input::-webkit-outer-spin-button,
+.range-labels input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.range-labels input:focus {
+    outline: none;
+    border-color: #0070f3;
+}

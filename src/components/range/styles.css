@@ -1,0 +1,38 @@
+.range {
+  margin-left: 30px;
+  width: 25%;
+  position: relative;
+  height: 50px;
+}
+  
+.range-slider {
+  position: relative;
+  height: 5px;
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 3px;
+}
+
+.range-bullet {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  cursor: grab;
+}
+
+.range-bullet:active {
+  cursor: grabbing;
+}
+
+.range-bullet.min {
+  left: 0;
+}
+
+.range-bullet.max {
+  left: 100%;
+}

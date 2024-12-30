@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Exercise2 renders correctly with valid data 1`] = `
+<div>
+  <div>
+    <h1>
+      Fixed Values
+    </h1>
+    <div
+      class="range"
+    >
+      <div
+        class="range-labels"
+      >
+        <div
+          class="label-wrapper"
+          style="left: -3%;"
+        >
+          <span>
+            0
+          </span>
+        </div>
+        <div
+          class="label-wrapper"
+          style="left: 100%;"
+        >
+          <span>
+            100
+          </span>
+        </div>
+      </div>
+      <div
+        class="range-slider"
+      >
+        <div
+          aria-label="min"
+          class="range-bullet min"
+          role="slider"
+          style="left: 0%;"
+        />
+        <div
+          aria-label="max"
+          class="range-bullet max"
+          role="slider"
+          style="left: 100%;"
+        />
+      </div>
+    </div>
+    <a
+      class="btn btn-primary"
+      href="/"
+    >
+      Go back
+    </a>
+  </div>
+</div>
+`;

@@ -15,7 +15,25 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply text-foreground bg-background font-sans;
+}
+
+.btn-primary {
+  @apply bg-blue-500 text-white border-none py-2 px-4 rounded cursor-pointer transition-colors duration-300;
+}
+
+.btn-primary:hover {
+  @apply bg-blue-600;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-black border-none py-2 px-4 rounded cursor-pointer transition-colors duration-300;
+}
+
+.btn-secondary:hover {
+  @apply bg-gray-300;
+}
+
+.alert-message {
+  @apply text-red-500 bg-black p-4 rounded;
 }

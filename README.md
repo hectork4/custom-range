@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Objective
 
-## Getting Started
+Know your code skills for an everyday code problem based on our team design system's needs.
 
-First, run the development server:
+## Exercise
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+You have to create the following component: `<Range />`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You have to use Next.js to create the solution.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This component has two use modes:
+1. Normal range from min to max number
+2. Fixed number of options range
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Use Cases
 
-## Learn More
+### Normal Range
 
-To learn more about Next.js, take a look at the following resources:
+Provide a `localhost:8080/exercise1` route with the following:
+- The component CAN'T be a HTML5 input range. It has to be a custom one.
+- The user can drag two bullets through the range line.
+- The user can click on both currency number label values (min or max) and set a new value.
+- The value will never be less than min or greater than max input values.
+- When some bullet is on hover, this bullet has to be bigger and change cursor's type into draggable.
+- Dragging a bullet turns cursor to dragging.
+- Min value and max value can't be crossed in range.
+- For this example, provide a mocked HTTP service returning min and max values that have to be used in the component. Example: `{min: 1, max: 100}`. Use `https://www.mockable.io/` or a custom mocked server.
+- Do as many unit tests as you can.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Fixed Values Range
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Provide a `localhost:8080/exercise2` route with the following:
+- The component CAN'T be a HTML5 input range. It has to be a custom one.
+- Given a range of values: `[1.99, 5.99, 10.99, 30.99, 50.99, 70.99]` the user will only be able to select those values in range.
+- Provide a mocked HTTP service that returns the array of numbers: `[1.99, 5.99, 10.99, 30.99, 50.99, 70.99]`. Use `https://www.mockable.io/` or a custom mocked server.
+- For this type of range, currency values are not input changeable. They have to be only a label.
+- The user can drag two bullets through the range line.
+- Min value and max value can't be crossed in range.
+- For this example, provide a mocked service returning min and max values that have to be used in the component. Example: `{rangeValues: []}`
+- Do as many unit tests as you can.
 
-## Deploy on Vercel
+## Extra
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- You can use any mocked way to provide services data.
+- You can give us your solution in any way. It's up to you!
